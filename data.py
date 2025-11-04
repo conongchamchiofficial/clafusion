@@ -17,7 +17,7 @@ def get_mnist_dataset(root, is_train, to_download=False, return_tensor=False):
     mnist = datasets.MNIST(
         root,
         train=is_train,
-        download=to_download,
+        download=True,
         transform=transforms.Compose(
             [
                 transforms.ToTensor(),
